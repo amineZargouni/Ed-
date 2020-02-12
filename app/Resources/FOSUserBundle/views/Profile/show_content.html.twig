@@ -1,0 +1,10 @@
+{% extends 'base_ecole.html.twig' %}
+{% trans_default_domain 'FOSUserBundle' %}
+{% block content %}
+<div class="fos_user_user_show">
+
+    {% block niv %}<li class="nav-item"> <a class="nav-link" href="{{ path('niveau_homepage') }}">Consulter</a></li>   {% endblock %}
+    {% block upperUserName %} <p class="mb-1 text-black">  {{ user.username }} </p> {% endblock %}
+    {% block leftUserName %}<span class="font-weight-bold mb-2"> <p> {{ user.username }}</p> </span>{% endblock %}
+</div>
+{% endblock %}

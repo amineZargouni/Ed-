@@ -1,0 +1,7 @@
+utilisateurs_homepage:
+    path:     /this
+    defaults: { _controller: UtilisateursBundle:Default:index }
+
+niveau_homepage:
+    path:     /niveau
+    defaults: { _controller: UtilisateursBundle:Default:niveau }
